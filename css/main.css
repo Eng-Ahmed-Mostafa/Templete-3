@@ -1,0 +1,135 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(195deg,#214294,#214294,#214294 ,#17479c ,#1d4da2  ,#1d4da2,#2561ca,#2868d7);
+}
+.log-in {
+    overflow: hidden;
+    position: relative;
+    padding: 40px;
+    width: 450px;
+    border: 2px solid white;
+    border-right-color: #41639f;
+    border-bottom-color: #4a6aa1;
+    border-left-color: #546e9b;
+    border-top-color: #41639f;
+    text-align: center;
+    border-radius: 20px;
+}
+.log-in::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewX(155deg) translateX(-10%);
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: -1;
+}
+.log-in .person {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.log-in .person i {
+    position: absolute;
+    font-size: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.3);
+}
+.log-in .box {
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 5px;
+    width: 100%;
+    background-color: ;
+}
+.log-in .box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.log-in .box i {
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.log-in .box input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 22px;
+    color: white;
+    caret-color: #2b78ff;
+}
+.log-in .box input::placeholder {
+    color: #ffffff6d;
+}
+.log-in .check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+    width: 100%;
+    color: #ffffff6d;
+}
+.log-in .check .content-remember {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.log-in .check .content-remember .check-box {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #112245;
+}
+.log-in .check .content-remember .check-box.chose {
+    border: 1px solid #fff;
+}
+.log-in .check .content-remember .check-box.chose::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #fff;
+}
+.log-in button {
+    width: 100%;
+    padding: 20px;
+    background-color: #233573;
+    border: none;
+}
+.log-in button a {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
