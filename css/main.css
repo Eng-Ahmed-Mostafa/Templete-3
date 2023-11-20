@@ -61,7 +61,6 @@ body {
     align-items: center;
     padding: 20px 5px;
     width: 100%;
-    background-color: ;
 }
 .log-in .box::before {
     content: "";
@@ -72,7 +71,7 @@ body {
     height: 1px;
     background-color: white;
 }
-.log-in .box i {
+.log-in .box > i {
     color: white;
     margin-right: 20px;
     font-size: 20px;
@@ -88,6 +87,34 @@ body {
 }
 .log-in .box input::placeholder {
     color: #ffffff6d;
+}
+.log-in .box .content-pass {
+    /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.log-in .box .content-pass i {
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.log-in .box .content-pass input {
+    
+    width: 100%;
+}
+.log-in .box .content-pass.show::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    border-width: 16px  0px 16px 320px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+    z-index: -1;
 }
 .log-in .check {
     display: flex;
@@ -107,10 +134,11 @@ body {
     width: 20px;
     height: 20px;
     background-color: #112245;
-}
-.log-in .check .content-remember .check-box.chose {
     border: 1px solid #fff;
 }
+/* .log-in .check .content-remember .check-box.chose {
+    border: 1px solid #fff;
+} */
 .log-in .check .content-remember .check-box.chose::before {
     content: "\f00c";
     font-family: "Font Awesome 5 Free";
